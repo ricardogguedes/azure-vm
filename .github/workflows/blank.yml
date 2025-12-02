@@ -35,7 +35,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          apt intall apache2
+          sudo apt intall apache2
           ls -l
             
 
