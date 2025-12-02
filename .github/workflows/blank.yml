@@ -37,6 +37,9 @@ jobs:
           echo test, and deploy your project.
           sudo apt intall apache2
           ls -l
+          echo "${{ secrets.chave }}" > chave.pem
+          chmod 600 chave.pem
+          ssh azureuser@51.120.126.59 -i chave.pem 
             
 
 
